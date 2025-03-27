@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpg" href="/public/static/img/promax-logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.scss">
+    <title>Doom - SrPromax</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__block">
+          <div class="header__menu-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g>
+            </svg>
+          </div>
+  
+          <h1 class="header__title">Bethesda</h1>
+
+          <div class="header__menu">
+            <a class="header__image-container" href="#">
+              <img class="header__image" src="public/static/img/logo.png" alt="logo Doom">
+            </a>
+            <a class="header__link">
+              Menú
+              <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+            </a>
+
+            <button class="header__button">Slayers Club</button>
+          </div>
+
+        </div>
+
+        <div class="header__block">
+          <div class="header__search">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"></path></g></g>
+            </svg>
+          </div>
+
+          <button class="header__account">Iniciar Sesión/Registrarse</button>
+          <div class="header__account-icon">
+            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
+          </div>
+        </div>
+      </nav>
+    </header> <!-- .Header -->
+
+    <section class="hero">
+      <div class="trailer-compra">
+        <button class="trailer-compra__button">
+          <span class="trailer-compra__span">
+            <svg width="17px" height="21px" viewBox="-0.5 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play [#1001]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-427.000000, -3765.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <polygon id="play-[#1001]" points="371 3605 371 3613 378 3609"> </polygon> </g> </g> </g> </g></svg>
+            TRÁILER DE <br>
+            GALARDONES
+          </span>
+        </button>
+
+        <button class="trailer-compra__button">COMPRAR YA</button>
+      </div>
+    </section> <!-- .Hero -->
+
+    <section class="social-media">
+      <div class="social-media__grid">
+        <a class="social-media__link" href="#">
+          <svg width="35px" height="35px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Facebook-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#ffffff"> <path d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z" id="Facebook"> </path> </g> </g> </g></svg>
+        </a>
+        <a class="social-media__link" href="#">
+          <svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="35px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="5151e0c8492e5103c096af88a50059a5"> <path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M66.084,0.5h379.819c36.079,0,65.597,29.505,65.597,65.584 v379.819c0,36.079-29.518,65.597-65.597,65.597H66.084C30.005,511.5,0.5,481.982,0.5,445.903V66.084 C0.5,30.005,30.005,0.5,66.084,0.5L66.084,0.5z M372.734,57.264c-12.65,0-23.005,10.355-23.005,23.005v55.067 c0,12.65,10.354,23.005,23.005,23.005h57.762c12.65,0,23.005-10.354,23.005-23.005V80.269c0-12.65-10.354-23.005-23.005-23.005 H372.734L372.734,57.264z M453.738,216.59h-44.975c4.254,13.897,6.55,28.606,6.55,43.852c0,84.996-71.111,153.898-158.839,153.898 c-87.716,0-158.827-68.902-158.827-153.898c0-15.245,2.295-29.954,6.55-43.852H57.276v215.853c0,11.178,9.132,20.322,20.311,20.322 h355.841c11.166,0,20.311-9.145,20.311-20.322V216.59L453.738,216.59z M256.475,155.447c-56.677,0-102.625,44.525-102.625,99.443 s45.948,99.443,102.625,99.443c56.688,0,102.636-44.525,102.636-99.443S313.163,155.447,256.475,155.447z"> </path> </g> </g></svg>
+        </a>
+        <a class="social-media__link" href="#">
+          <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1920 311.856c-70.701 33.769-146.598 56.47-226.221 66.86 81.317-52.517 143.774-135.529 173.252-234.691-76.236 48.678-160.716 84.028-250.391 103.002-71.718-82.56-174.268-134.06-287.435-134.06-217.75 0-394.165 189.966-394.165 424.206 0 33.318 3.614 65.619 10.165 96.678C617.9 616.119 327.304 447.385 133.045 190.67c-33.77 62.57-53.309 135.53-53.309 213.233 0 147.162 91.031 276.818 196.744 353.054-64.602-2.26-157.101-21.46-157.101-53.309v5.648c0 205.327 114.41 376.658 294.55 415.849-32.978 9.487-78.38 14.795-114.409 14.795-25.412 0-55.454-2.71-79.624-7.793 50.26 168.509 193.13 291.163 365.478 294.777-134.852 113.506-306.07 181.383-490.616 181.383-31.85 0-64.038-2.033-94.758-5.873 174.494 120.17 381.176 190.532 603.67 190.532 724.97 0 1121.055-646.136 1121.055-1206.55 0-18.41-.452-36.932-1.356-55.116 77.026-59.746 143.887-134.4 196.631-219.444" fill-rule="evenodd"></path> </g></svg>
+        </a>
+        <a class="social-media__link" href="#">
+          <svg width="35px" height="35px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#168]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]"> </path> </g> </g> </g> </g></svg>
+        </a>
+      </div>
+    </section> <!-- .Social Media -->
+
+    <section class="feature">
+        <div class="feature__container">
+          <h1 class="feature__heading">Arrasa el Infierno</h1>
+          <div class="feature__paragraph">
+            Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones para detener la destrucción definitiva de la humanidad.
+          </div>
+          <div class="feature__paragraph">
+            <strong>No le tienen miedo a nada...salvo a ti.</strong>
+          </div>
+          <div class="feature__paragraph">
+            Disfruta de la mejor combinación de velocidad y potencia en DOOM Eternal, que trae un salto cualitativo del combate en primera persona.
+          </div>
+          <div class="feature__paragraph">
+            Desvela los orígenes del Slayer y su eterna misión de ARRASAR EL INFIERNO.
+          </div>
+        </div>
+    </section> <!-- .Feature -->
+
+    <section class="news-update">
+      <div class="container">
+        <h1 class="news-update__heading">Noticias y Actualizaciones</h1>
+
+        <div class="news-update__grid">
+
+          <div class="news">
+            <div class="news__image-container">
+              <img class="news__image" src="public/static/img/news/news-1.webp" alt="news 1">
+            </div>
+            <div class="news__content">
+              <div class="news__heading">
+                <span class="news__span">Noticias</span>
+              </div>
+
+              <div class="news__text">
+                Ha llegado la hora de ARRASAR EL INFIERNO en DOOM Eternal
+              </div>
+
+              <div class="news__footer">
+                <span class="news__span news__span--secondary">DOOM<sup>®</sup> Eternal</span>
+              </div>
+            </div>
+          </div> <!-- news -->
+
+          <div class="news">
+            <div class="news__image-container">
+              <img class="news__image" src="public/static/img/news/news-2.webp" alt="news 2">
+            </div>
+            <div class="news__content">
+              <div class="news__heading">
+                <span class="news__span news__span--secondary">Vídeo</span>
+              </div>
+
+              <div class="news__text">
+                Tráiler oficial de lanzamiento
+              </div>
+
+              <div class="news__footer">
+                <span class="news__span news__span--secondary">DOOM<sup>®</sup> Eternal</span>
+              </div>
+            </div>
+          </div> <!-- news -->
+
+          <div class="news">
+            <div class="news__image-container">
+              <img class="news__image" src="public/static/img/news/news-3.webp" alt="news 3">
+            </div>
+            <div class="news__content">
+              <div class="news__heading">
+                <span class="news__span">Noticias</span>
+              </div>
+ 
+              <div class="news__text">
+                Ha llegado la hora de ARRASAR EL INFIERNO en DOOM Eternal
+              </div>
+
+              <div class="news__footer">
+                <span class="news__span news__span--secondary">DOOM<sup>®</sup> Eternal</span>
+              </div>
+            </div>
+          </div> <!-- news -->
+
+          <div class="news">
+           
+          </div> <!-- news -->
+
+          <div class="news">
+            <div class="news__image-container">
+              <img class="news__image" src="public/static/img/news/news-4.webp" alt="news 4">
+            </div>
+            <div class="news__content">
+              <div class="news__heading">
+                <span class="news__span">Vídeo</span>
+              </div>
+
+              <div class="news__text">
+                DOOM Eternal - Tráiler narrativo oficial para el E3
+              </div>
+
+              <div class="news__footer">
+                <span class="news__span">DOOM<sup>®</sup> Eternal</span>
+              </div>
+            </div>
+          </div> <!-- news -->
+
+        </div> <!-- .News Update Grid -->
+
+        <div class="news-update__see-more">
+          <a class="news-update__link" href="#">Más Noticias</a>
+        </div>
+      </div> <!-- .Container -->
+    </section> <!-- .News Update -->
+
+    <div class="modal-trailer modal-trailer--disabled">
+      <div class="modal-trailer__header">
+        <svg class="modal-trailer__close" focusable="false" viewBox="0 0 24 24" aria-hidden="true" aria-label="Cerrar menú de navegación global"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+      </div>
+      <iframe id="iframeTrailer" width="560" height="315" src="https://www.youtube.com/embed/5-_MEAWYWM4?si=3SZHZ48nBRusVCUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="slider-mask">
+
+      <div class="slider-mask__buttons">
+        <button id="next-btn" class="slider-mask__button">
+          <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+        </button>
+        <button id="prev-btn" class="slider-mask__button">
+          <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>
+        </button>
+      </div>
+      
+      
+      <div class="slider-slide">
+        <div class="slider">
+          <div class="slider__image"></div>
+    
+          <div class="slider__content">
+            <h1 class="slider__heading">Nivel de Amenaza de Slayer al Máximo</h1>
+    
+            <div class="slider__container">
+              <p class="slider__texto">
+                Echa la mano de la tecnología más avanzada para aniquilar demonios con el traje de pretor avanzado del DOOM Slayer, que incluye un lanzallamas al hombro y una hoja ejecutora retráctil en la muñeca. Serás más rápido, fuerte y versátil que nunca gracias a armas y modificaciones mejoradas, como el gancho de carnicero de la súper escopeta para acortar las distancias, y habilidades como Carrera doble.
+              </p>
+            </div>
+          </div>
+        </div> <!-- .Slider -->
+  
+        <div class="slider">
+          <div class="slider__image"></div>
+    
+          <div class="slider__content">
+            <h1 class="slider__heading">La Impía Trinidad</h1>
+    
+            <div class="slider__container">
+              <p class="slider__texto">
+                Si estás muerto, no puedes matar demonios, y sin recursos no puedes evitar que te maten. Usa a tus enemigos para reponer suministros: obtendrás salud al ejecutarlos, armadura al incinerarlos y munición al destriparlos con la motosierra. Estas herramientas son fundamentales para sobrevivir y convertirte en el mejor asesino de demonios que se haya visto jamás.  
+              </p>
+            </div>
+          </div>
+        </div> <!-- .Slider -->
+  
+        <div class="slider">
+          <div class="slider__image"></div>
+    
+          <div class="slider__content">
+            <h1 class="slider__heading">Un Nuevo Tipo de Demonio (Destruible)</h1>
+    
+            <div class="slider__container">
+              <p class="slider__texto">
+                Tendrás más demonios que nunca para aniquilar, cada uno con sus propios ataques y habilidades. Vuelven los clásicos favoritos de los fans, como el elemental del dolor, el arch-vile y el aracnotrón, acompañados de una horda de demonios totalmente nuevos, incluidos el cazador infernal, el acechador y el gladiador. Gracias al sistema de “demonios destruibles” de DOOM Eternal, podrás descuartizar totalmente a tus demonios favoritos y vivir una fantasía de poder más intensa aún. 
+              </p>
+            </div>
+          </div>
+        </div> <!-- .Slider -->
+  
+        <div class="slider">
+          <div class="slider__image"></div>
+    
+          <div class="slider__content">
+            <h1 class="slider__heading">Presentamos BattleMode</h1>
+    
+            <div class="slider__container">
+              <p class="slider__texto">
+                BATTLEMODE es el nuevo modo multijugador 2 contra 1 creado desde cero por id Software. Un DOOM Slayer armado hasta los dientes se enfrenta a dos demonios controlados por jugadores para disputarse la victoria en tres rondas de intenso combate en primera persona. ¡Pronto anunciaremos más detalles!
+              </p>
+    
+            </div>
+          </div>
+        </div> <!-- .Slider -->
+      </div>
+
+      <div class="slider-slide__progress-content">
+        <div class="slider-slide__progress-bar">
+          <div class="slider-slide__progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="editions">
+      <div class="editions__container">
+          
+      </div>
+    </section>
+
+    <section class="doom-nintendo">
+      <div class="doom-nintendo__container">
+        <div class="doom-nintendo__grid">
+          <div class="doom-nintendo__image-container">
+            <img class="doom-nintendo__image" src="public/static/img/background/doom-n-switch.png" alt="Doom Nintendo">
+          </div>
+
+          <div class="doom-nintendo__content">
+            <h1 class="doom-nintendo__heading">Buy Doom Eternal For Nintendo Switch</h1>
+
+            <p class="doom-nintendo__text">
+              DOOM® Eternal, el galardonado juego y “uno de los mejores shooters en primera persona de la historia” según GameRevolution, llega a Nintendo Switch. DOOM Eternal, desarrollado por id Software y Panic Button, es la secuela directa de DOOM®, ganador del premio al Mejor juego de acción de 2016 en los Game Awards.
+            </p>
+
+            <div class="doom-nintendo__links">
+              <a href="#" class="doom-nintendo__link">Más Información</a>
+              <a href="#" class="doom-nintendo__link doom-nintendo__link--nintendo">
+                <img class="doom-nintendo__logo" src="/static/img/nintendo.svg" alt="logo nintendo switch">
+                Comprar Ya
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="language">
+      <div class="language__container">
+        <a class="language__link" href="#">
+          <div class="language__grid">
+            <svg class="language__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></svg>
+            <span class="language__text">Español</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <div class="footer__block">
+            <h2 class="footer__heading">Explorar</h2>
+            
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a href="#">Inicio</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Juegos</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Mods</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Comunidad</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Noticias</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Estudios</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Testeo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h2 class="footer__heading">Asistencia</h2>
+            
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a href="#">Centro de asistencia</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Manual y documentos de seguridad</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Estado</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h2 class="footer__heading">Información Legal</h2>
+            
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a href="#">Política de privacidad</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Condiciones del servicio</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Acuerdo de licencia del usuario final</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Información legal</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Política de cookies</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Preferencias sobre cookies</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Código de conducta</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Contacto</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Compañía</a>
+              </li>
+              <li class="footer__li">
+                <a href="#">Empleos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div class="copyright__grid">
+            <div class="company">
+              <svg class="company__logo" viewBox="0 0 125 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Logotipo de Bethesda"><defs><path id="path-7479" d="M0,7.95873016 L7.68085187,7.95873016 L7.68085187,0 L0,0 L0,7.95873016 Z M41.0388533,7.98855564 L41.0388533,4.99657848 L43.2505153,4.99657848 L43.2505153,0.962010582 L48.2258731,0.962010582 L48.2258731,4.99657848 L50.8915079,4.99657848 L50.8915079,8.11015873 L48.2258731,8.11015873 L48.2258731,12.7306173 C48.2258731,13.9549559 48.50383,14.4914638 49.7588688,14.4914638 C50.1370031,14.4914638 50.5130209,14.4671252 50.8915079,14.4128042 L50.8915079,18.2441975 C49.8865597,18.2441975 48.7542734,18.3969312 47.6992365,18.3969312 C45.5877518,18.3969312 43.2505153,18.0653616 43.2505153,14.4420811 L43.2505153,8.11015873 L41.099441,8.11015873 C41.7031543,9.35326557 41.9889156,10.9126859 41.9889156,12.7555203 L32.4403204,12.7555203 C32.5676585,14.2602822 33.4223407,15.3332981 34.9765006,15.3332981 C35.7825051,15.3332981 36.6625843,15.0278307 37.0650574,14.3897354 L41.7127224,14.3897354 C40.7095378,17.2497002 37.9684173,18.5773898 35.0050723,18.5773898 C30.8325444,18.5773898 27.6907144,16.075097 27.6907144,11.6595767 C27.6907144,7.80455026 30.4529992,4.66380952 34.5775549,4.66380952 C37.8420013,4.66380952 39.9368524,5.83227076 41.0388533,7.98855564 Z M2.70514135,5.15555556 L2.70514135,2.80458554 L4.97394683,2.80458554 L4.97394683,5.15555556 L2.70514135,5.15555556 Z M10.7086066,18.2441975 L10.7086066,0.0198589065 L20.5341005,0.0198589065 C25.2590149,0.0198589065 26.2621994,2.72426808 26.2621994,4.58811287 C26.2621994,6.42479718 25.3849421,7.42232804 24.052301,8.16059965 C25.6597243,8.72356261 27.1669702,10.0247972 27.1669702,12.704515 C27.1669702,16.3542504 24.052301,18.2441975 20.8847212,18.2441975 L10.7086066,18.2441975 Z M16.2352926,4.35707231 L16.2352926,7.11544974 L19.1513708,7.11544974 C20.306585,7.11544974 21.0346345,6.78246914 21.0346345,5.6092769 C21.0346345,4.68828924 20.2818934,4.35707231 19.1513708,4.35707231 L16.2352926,4.35707231 Z M16.2352926,10.5087478 L16.2352926,13.9055732 L19.4790636,13.9055732 C20.6356888,13.9055732 21.6388733,13.5722399 21.6388733,12.1690653 C21.6388733,11.0949912 21.0106484,10.5087478 19.7037572,10.5087478 L16.2352926,10.5087478 Z M32.4643065,10.1265961 L37.2153234,10.1265961 C37.2153234,8.90049383 36.3105526,7.90613757 35.0297639,7.90613757 C33.5450932,7.90613757 32.6921747,8.69731922 32.4643065,10.1265961 Z M51.7155372,18.2442681 L51.7155372,0.0199294533 L56.690895,0.0199294533 L56.690895,6.42486772 L56.7399254,6.42486772 C57.5942549,5.40546737 58.7022023,4.66402116 60.8105124,4.66402116 C63.1481016,4.66402116 65.2867471,6.11798942 65.2867471,9.15502646 L65.2867471,18.2442681 L60.3096256,18.2442681 L60.3096256,11.3 C60.3096256,9.7691358 60.1336097,8.6957672 58.6778634,8.6957672 C57.8217703,8.6957672 56.690895,9.13068783 56.690895,11.2506173 L56.690895,18.2442681 L51.7155372,18.2442681 Z M80.2302456,12.7555203 L70.6812977,12.7555203 C70.8058139,14.2602822 71.661907,15.3332981 73.2174779,15.3332981 C74.0238351,15.3332981 74.9053253,14.7858554 75.3063875,14.1477601 L79.9522887,14.1477601 C78.9508679,17.0063139 76.2079837,18.5773898 73.2464024,18.5773898 C69.0721107,18.5773898 65.9302807,16.075097 65.9302807,11.6595767 C65.9302807,7.80455026 68.6943292,4.66380952 72.8171212,4.66380952 C77.9960084,4.66380952 80.2302456,7.60102293 80.2302456,12.7555203 Z M70.7056365,10.1265961 L75.4548898,10.1265961 C75.4548898,8.90049383 74.5532936,7.90613757 73.271094,7.90613757 C71.7878342,7.90613757 70.9317411,8.69731922 70.7056365,10.1265961 Z M92.7498049,8.84994709 L88.229478,8.84994709 C88.2019645,8.41643739 87.9776237,8.08522046 87.6481672,7.85559083 C87.350457,7.60126984 86.946573,7.47287478 86.5444526,7.47287478 C85.8403892,7.47287478 85.0372067,7.6259612 85.0372067,8.4919224 C85.0372067,8.87604938 85.3391497,9.05488536 85.6139319,9.18151675 C86.444628,9.54059965 88.3278917,9.64253968 89.9868146,10.203739 C91.6460903,10.7402469 93.1046585,11.7349559 93.1046585,13.905679 C93.1046585,17.5815168 89.6347829,18.577284 86.4672031,18.577284 C83.4040336,18.577284 80.0343354,17.5691711 79.9616715,14.1480071 L84.7123357,14.1480071 C84.7366746,14.6086772 84.9356184,14.7490653 85.3137526,15.0788713 C85.5652542,15.3070899 86.0421549,15.4629982 86.6463936,15.4629982 C87.2971937,15.4629982 88.3278917,15.2069136 88.3278917,14.4421869 C88.3278917,13.6742857 87.9000215,13.4446561 85.5881821,13.0358377 C81.7934356,12.3726984 80.2604399,11.1476543 80.2604399,8.87604938 C80.2604399,5.53178131 83.804743,4.66405644 86.4185254,4.66405644 C89.2326626,4.66405644 92.6266996,5.4562963 92.7498049,8.84994709 Z M107.421308,0.0201058201 L107.421308,18.2440917 L102.623377,18.2440917 L102.623377,16.7873016 L102.571524,16.7873016 C101.9433,17.6324515 101.190558,18.577425 98.7527918,18.577425 C95.0582227,18.577425 93.2747836,14.8758377 93.2747836,11.5559083 C93.2747836,8.44303351 94.4557476,4.66419753 98.8286303,4.66419753 C100.309774,4.66419753 101.644178,5.32663139 102.39692,6.45079365 L102.448419,6.45079365 L102.448419,0.0201058201 L107.421308,0.0201058201 Z M121.590725,9.84617284 L121.590725,15.2825044 C121.590725,16.2786243 121.637639,17.4024339 122.191789,18.2444092 L117.115901,18.2444092 C116.98821,17.8881481 116.914135,17.3512875 116.939885,16.9939683 L116.889796,16.9939683 C115.833349,18.2179541 114.303175,18.5773898 112.69293,18.5773898 C110.177913,18.5773898 108.095353,17.3512875 108.095353,14.5703351 C108.095353,10.3812698 112.917623,10.5350617 115.456978,10.0511111 C116.133528,9.92306878 116.813958,9.71954145 116.813958,8.8761552 C116.813958,7.98197531 115.986436,7.65040564 115.179374,7.65040564 C113.6492,7.65040564 113.345493,8.44299824 113.318333,9.00243386 L108.697828,9.00243386 C108.848094,5.27580247 112.315148,4.66416226 115.405126,4.66416226 C121.637639,4.66416226 121.590725,7.29449735 121.590725,9.84617284 Z M102.623377,11.6084656 C102.623377,10.0511464 102.220904,8.33968254 100.439228,8.33968254 C98.6543782,8.33968254 98.2504941,10.0511464 98.2504941,11.6084656 C98.2504941,13.1883598 98.6543782,14.9001764 100.439228,14.9001764 C102.220904,14.9001764 102.623377,13.1883598 102.623377,11.6084656 Z M116.813958,13.5216578 L116.813958,12.2959083 C116.211483,12.6027866 115.534227,12.7798589 114.852739,12.9357672 C113.747966,13.1886772 113.169477,13.4705115 113.169477,14.366455 C113.169477,14.9773898 113.825216,15.587619 114.726812,15.587619 C115.860862,15.587619 116.738119,14.9001411 116.813958,13.5216578 Z M123.240018,3.14811287 C123.484817,3.14811287 123.724679,3.21231041 123.958191,3.34 C124.191703,3.46804233 124.373715,3.65075838 124.504228,3.88850088 C124.634741,4.12694885 124.699997,4.37492063 124.699997,4.63312169 C124.699997,4.88885362 124.635799,5.13506173 124.50705,5.37068783 C124.378653,5.60666667 124.198405,5.78973545 123.967009,5.92059965 C123.735261,6.05111111 123.49293,6.11636684 123.240018,6.11636684 C122.986753,6.11636684 122.744422,6.05111111 122.512674,5.92059965 C122.281278,5.78973545 122.100677,5.60666667 121.971575,5.37068783 C121.842473,5.13506173 121.778275,4.88885362 121.778275,4.63312169 C121.778275,4.37492063 121.843531,4.12694885 121.97475,3.88850088 C122.105615,3.65075838 122.28798,3.46804233 122.521845,3.34 C122.755004,3.21231041 122.994865,3.14811287 123.240018,3.14811287 Z M123.240018,3.39432099 C123.034725,3.39432099 122.835076,3.44758377 122.640365,3.55446208 C122.446359,3.66134039 122.294329,3.81407407 122.184628,4.01266314 C122.074927,4.2112522 122.0199,4.41795414 122.0199,4.63312169 C122.0199,4.84687831 122.073869,5.05216931 122.181454,5.24793651 C122.289391,5.4437037 122.44001,5.59679012 122.634015,5.70613757 C122.827315,5.81548501 123.029434,5.87051146 123.240018,5.87051146 C123.450249,5.87051146 123.652368,5.81548501 123.845668,5.70613757 C124.039673,5.59679012 124.189939,5.4437037 124.297171,5.24793651 C124.40405,5.05216931 124.457667,4.84687831 124.457667,4.63312169 C124.457667,4.41795414 124.403345,4.2112522 124.293996,4.01266314 C124.185001,3.81407407 124.032971,3.66134039 123.83826,3.55446208 C123.643549,3.44758377 123.4439,3.39432099 123.240018,3.39432099 Z M122.599094,5.45322751 L122.599094,3.85640212 L123.139135,3.85640212 C123.323969,3.85640212 123.457304,3.87121693 123.540197,3.90049383 C123.622738,3.93012346 123.688347,3.98162257 123.737377,4.05499118 C123.786408,4.12835979 123.811099,4.20631393 123.811099,4.28885362 C123.811099,4.4059612 123.770182,4.5075485 123.688347,4.59396825 C123.606159,4.68038801 123.497516,4.72871252 123.361712,4.73929453 C123.417445,4.76292769 123.461889,4.79114638 123.4954,4.82395062 C123.558539,4.88673721 123.636142,4.99220459 123.727853,5.14070547 L123.91939,5.45322751 L123.609686,5.45322751 L123.470355,5.20137566 C123.360654,5.00349206 123.272117,4.87968254 123.205097,4.82994709 C123.158536,4.79326279 123.09081,4.77492063 123.001567,4.77492063 L122.852712,4.77492063 L122.852712,5.45322751 L122.599094,5.45322751 Z M122.852712,4.55446208 L123.160652,4.55446208 C123.307743,4.55446208 123.408273,4.53223986 123.461889,4.48779541 C123.5148,4.44335097 123.541961,4.38409171 123.541961,4.3107231 C123.541961,4.26345679 123.52891,4.22112875 123.50316,4.18373898 C123.47741,4.14634921 123.441431,4.11883598 123.395928,4.10014109 C123.350072,4.08179894 123.265062,4.07262787 123.141251,4.07262787 L122.852712,4.07262787 L122.852712,4.55446208 Z"></path></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-90.000000, -31.000000)"><g transform="translate(90.000000, 31.000000)"><mask fill="white"><use xlink:href="#path-7479"></use></mask><use fill-rule="evenodd" xlink:href="#path-7479" style="fill: white;"></use></g></g></g></svg>
+
+              <div class="company__grid">
+                <img class="company__image" src="public/static/img/footer/privacy-certified.gif" alt="privacy certified">
+                <img class="company__image" src="public/static/img/footer/mature.png" alt="manure">
+                <div class="company__content">
+                  <p class="company__text">Derramamiento de sangre</p>
+                  <p class="company__text">Violencia intensa</p>
+                  <p class="company__text">Lenguaje fuerte</p>
+                  <p class="company__text">Interacción de Usuarios</p>
+                </div>
+              </div>
+            </div>
+
+
+            <p class="copyright__text">
+              © 2023 Bethesda Softworks LLC, a ZeniMax Media company. Bethesda, Bethesda Softworks, ZeniMax and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the U.S. and/or other countries. DOOM, id, id Software, id Tech and related logos are registered trademarks or trademarks of id Software LLC in the U.S. and/or other countries. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Ventana Modal -->
+    <div class="modal-mask">
+      <div class="modal-menu ">
+        <div class="modal-menu__container">
+          <div class="modal-menu__header">
+            <svg class="modal-menu__close" focusable="false" viewBox="0 0 24 24" aria-hidden="true" aria-label="Cerrar menú de navegación global"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+  
+            <div class="modal-menu__nav">
+              <a class="modal-menu__logo" href="#">
+                <svg viewBox="0 0 125 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Logotipo de Bethesda"><defs><path id="path-8611" d="M0,7.95873016 L7.68085187,7.95873016 L7.68085187,0 L0,0 L0,7.95873016 Z M41.0388533,7.98855564 L41.0388533,4.99657848 L43.2505153,4.99657848 L43.2505153,0.962010582 L48.2258731,0.962010582 L48.2258731,4.99657848 L50.8915079,4.99657848 L50.8915079,8.11015873 L48.2258731,8.11015873 L48.2258731,12.7306173 C48.2258731,13.9549559 48.50383,14.4914638 49.7588688,14.4914638 C50.1370031,14.4914638 50.5130209,14.4671252 50.8915079,14.4128042 L50.8915079,18.2441975 C49.8865597,18.2441975 48.7542734,18.3969312 47.6992365,18.3969312 C45.5877518,18.3969312 43.2505153,18.0653616 43.2505153,14.4420811 L43.2505153,8.11015873 L41.099441,8.11015873 C41.7031543,9.35326557 41.9889156,10.9126859 41.9889156,12.7555203 L32.4403204,12.7555203 C32.5676585,14.2602822 33.4223407,15.3332981 34.9765006,15.3332981 C35.7825051,15.3332981 36.6625843,15.0278307 37.0650574,14.3897354 L41.7127224,14.3897354 C40.7095378,17.2497002 37.9684173,18.5773898 35.0050723,18.5773898 C30.8325444,18.5773898 27.6907144,16.075097 27.6907144,11.6595767 C27.6907144,7.80455026 30.4529992,4.66380952 34.5775549,4.66380952 C37.8420013,4.66380952 39.9368524,5.83227076 41.0388533,7.98855564 Z M2.70514135,5.15555556 L2.70514135,2.80458554 L4.97394683,2.80458554 L4.97394683,5.15555556 L2.70514135,5.15555556 Z M10.7086066,18.2441975 L10.7086066,0.0198589065 L20.5341005,0.0198589065 C25.2590149,0.0198589065 26.2621994,2.72426808 26.2621994,4.58811287 C26.2621994,6.42479718 25.3849421,7.42232804 24.052301,8.16059965 C25.6597243,8.72356261 27.1669702,10.0247972 27.1669702,12.704515 C27.1669702,16.3542504 24.052301,18.2441975 20.8847212,18.2441975 L10.7086066,18.2441975 Z M16.2352926,4.35707231 L16.2352926,7.11544974 L19.1513708,7.11544974 C20.306585,7.11544974 21.0346345,6.78246914 21.0346345,5.6092769 C21.0346345,4.68828924 20.2818934,4.35707231 19.1513708,4.35707231 L16.2352926,4.35707231 Z M16.2352926,10.5087478 L16.2352926,13.9055732 L19.4790636,13.9055732 C20.6356888,13.9055732 21.6388733,13.5722399 21.6388733,12.1690653 C21.6388733,11.0949912 21.0106484,10.5087478 19.7037572,10.5087478 L16.2352926,10.5087478 Z M32.4643065,10.1265961 L37.2153234,10.1265961 C37.2153234,8.90049383 36.3105526,7.90613757 35.0297639,7.90613757 C33.5450932,7.90613757 32.6921747,8.69731922 32.4643065,10.1265961 Z M51.7155372,18.2442681 L51.7155372,0.0199294533 L56.690895,0.0199294533 L56.690895,6.42486772 L56.7399254,6.42486772 C57.5942549,5.40546737 58.7022023,4.66402116 60.8105124,4.66402116 C63.1481016,4.66402116 65.2867471,6.11798942 65.2867471,9.15502646 L65.2867471,18.2442681 L60.3096256,18.2442681 L60.3096256,11.3 C60.3096256,9.7691358 60.1336097,8.6957672 58.6778634,8.6957672 C57.8217703,8.6957672 56.690895,9.13068783 56.690895,11.2506173 L56.690895,18.2442681 L51.7155372,18.2442681 Z M80.2302456,12.7555203 L70.6812977,12.7555203 C70.8058139,14.2602822 71.661907,15.3332981 73.2174779,15.3332981 C74.0238351,15.3332981 74.9053253,14.7858554 75.3063875,14.1477601 L79.9522887,14.1477601 C78.9508679,17.0063139 76.2079837,18.5773898 73.2464024,18.5773898 C69.0721107,18.5773898 65.9302807,16.075097 65.9302807,11.6595767 C65.9302807,7.80455026 68.6943292,4.66380952 72.8171212,4.66380952 C77.9960084,4.66380952 80.2302456,7.60102293 80.2302456,12.7555203 Z M70.7056365,10.1265961 L75.4548898,10.1265961 C75.4548898,8.90049383 74.5532936,7.90613757 73.271094,7.90613757 C71.7878342,7.90613757 70.9317411,8.69731922 70.7056365,10.1265961 Z M92.7498049,8.84994709 L88.229478,8.84994709 C88.2019645,8.41643739 87.9776237,8.08522046 87.6481672,7.85559083 C87.350457,7.60126984 86.946573,7.47287478 86.5444526,7.47287478 C85.8403892,7.47287478 85.0372067,7.6259612 85.0372067,8.4919224 C85.0372067,8.87604938 85.3391497,9.05488536 85.6139319,9.18151675 C86.444628,9.54059965 88.3278917,9.64253968 89.9868146,10.203739 C91.6460903,10.7402469 93.1046585,11.7349559 93.1046585,13.905679 C93.1046585,17.5815168 89.6347829,18.577284 86.4672031,18.577284 C83.4040336,18.577284 80.0343354,17.5691711 79.9616715,14.1480071 L84.7123357,14.1480071 C84.7366746,14.6086772 84.9356184,14.7490653 85.3137526,15.0788713 C85.5652542,15.3070899 86.0421549,15.4629982 86.6463936,15.4629982 C87.2971937,15.4629982 88.3278917,15.2069136 88.3278917,14.4421869 C88.3278917,13.6742857 87.9000215,13.4446561 85.5881821,13.0358377 C81.7934356,12.3726984 80.2604399,11.1476543 80.2604399,8.87604938 C80.2604399,5.53178131 83.804743,4.66405644 86.4185254,4.66405644 C89.2326626,4.66405644 92.6266996,5.4562963 92.7498049,8.84994709 Z M107.421308,0.0201058201 L107.421308,18.2440917 L102.623377,18.2440917 L102.623377,16.7873016 L102.571524,16.7873016 C101.9433,17.6324515 101.190558,18.577425 98.7527918,18.577425 C95.0582227,18.577425 93.2747836,14.8758377 93.2747836,11.5559083 C93.2747836,8.44303351 94.4557476,4.66419753 98.8286303,4.66419753 C100.309774,4.66419753 101.644178,5.32663139 102.39692,6.45079365 L102.448419,6.45079365 L102.448419,0.0201058201 L107.421308,0.0201058201 Z M121.590725,9.84617284 L121.590725,15.2825044 C121.590725,16.2786243 121.637639,17.4024339 122.191789,18.2444092 L117.115901,18.2444092 C116.98821,17.8881481 116.914135,17.3512875 116.939885,16.9939683 L116.889796,16.9939683 C115.833349,18.2179541 114.303175,18.5773898 112.69293,18.5773898 C110.177913,18.5773898 108.095353,17.3512875 108.095353,14.5703351 C108.095353,10.3812698 112.917623,10.5350617 115.456978,10.0511111 C116.133528,9.92306878 116.813958,9.71954145 116.813958,8.8761552 C116.813958,7.98197531 115.986436,7.65040564 115.179374,7.65040564 C113.6492,7.65040564 113.345493,8.44299824 113.318333,9.00243386 L108.697828,9.00243386 C108.848094,5.27580247 112.315148,4.66416226 115.405126,4.66416226 C121.637639,4.66416226 121.590725,7.29449735 121.590725,9.84617284 Z M102.623377,11.6084656 C102.623377,10.0511464 102.220904,8.33968254 100.439228,8.33968254 C98.6543782,8.33968254 98.2504941,10.0511464 98.2504941,11.6084656 C98.2504941,13.1883598 98.6543782,14.9001764 100.439228,14.9001764 C102.220904,14.9001764 102.623377,13.1883598 102.623377,11.6084656 Z M116.813958,13.5216578 L116.813958,12.2959083 C116.211483,12.6027866 115.534227,12.7798589 114.852739,12.9357672 C113.747966,13.1886772 113.169477,13.4705115 113.169477,14.366455 C113.169477,14.9773898 113.825216,15.587619 114.726812,15.587619 C115.860862,15.587619 116.738119,14.9001411 116.813958,13.5216578 Z M123.240018,3.14811287 C123.484817,3.14811287 123.724679,3.21231041 123.958191,3.34 C124.191703,3.46804233 124.373715,3.65075838 124.504228,3.88850088 C124.634741,4.12694885 124.699997,4.37492063 124.699997,4.63312169 C124.699997,4.88885362 124.635799,5.13506173 124.50705,5.37068783 C124.378653,5.60666667 124.198405,5.78973545 123.967009,5.92059965 C123.735261,6.05111111 123.49293,6.11636684 123.240018,6.11636684 C122.986753,6.11636684 122.744422,6.05111111 122.512674,5.92059965 C122.281278,5.78973545 122.100677,5.60666667 121.971575,5.37068783 C121.842473,5.13506173 121.778275,4.88885362 121.778275,4.63312169 C121.778275,4.37492063 121.843531,4.12694885 121.97475,3.88850088 C122.105615,3.65075838 122.28798,3.46804233 122.521845,3.34 C122.755004,3.21231041 122.994865,3.14811287 123.240018,3.14811287 Z M123.240018,3.39432099 C123.034725,3.39432099 122.835076,3.44758377 122.640365,3.55446208 C122.446359,3.66134039 122.294329,3.81407407 122.184628,4.01266314 C122.074927,4.2112522 122.0199,4.41795414 122.0199,4.63312169 C122.0199,4.84687831 122.073869,5.05216931 122.181454,5.24793651 C122.289391,5.4437037 122.44001,5.59679012 122.634015,5.70613757 C122.827315,5.81548501 123.029434,5.87051146 123.240018,5.87051146 C123.450249,5.87051146 123.652368,5.81548501 123.845668,5.70613757 C124.039673,5.59679012 124.189939,5.4437037 124.297171,5.24793651 C124.40405,5.05216931 124.457667,4.84687831 124.457667,4.63312169 C124.457667,4.41795414 124.403345,4.2112522 124.293996,4.01266314 C124.185001,3.81407407 124.032971,3.66134039 123.83826,3.55446208 C123.643549,3.44758377 123.4439,3.39432099 123.240018,3.39432099 Z M122.599094,5.45322751 L122.599094,3.85640212 L123.139135,3.85640212 C123.323969,3.85640212 123.457304,3.87121693 123.540197,3.90049383 C123.622738,3.93012346 123.688347,3.98162257 123.737377,4.05499118 C123.786408,4.12835979 123.811099,4.20631393 123.811099,4.28885362 C123.811099,4.4059612 123.770182,4.5075485 123.688347,4.59396825 C123.606159,4.68038801 123.497516,4.72871252 123.361712,4.73929453 C123.417445,4.76292769 123.461889,4.79114638 123.4954,4.82395062 C123.558539,4.88673721 123.636142,4.99220459 123.727853,5.14070547 L123.91939,5.45322751 L123.609686,5.45322751 L123.470355,5.20137566 C123.360654,5.00349206 123.272117,4.87968254 123.205097,4.82994709 C123.158536,4.79326279 123.09081,4.77492063 123.001567,4.77492063 L122.852712,4.77492063 L122.852712,5.45322751 L122.599094,5.45322751 Z M122.852712,4.55446208 L123.160652,4.55446208 C123.307743,4.55446208 123.408273,4.53223986 123.461889,4.48779541 C123.5148,4.44335097 123.541961,4.38409171 123.541961,4.3107231 C123.541961,4.26345679 123.52891,4.22112875 123.50316,4.18373898 C123.47741,4.14634921 123.441431,4.11883598 123.395928,4.10014109 C123.350072,4.08179894 123.265062,4.07262787 123.141251,4.07262787 L122.852712,4.07262787 L122.852712,4.55446208 Z"></path></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-90.000000, -31.000000)"><g transform="translate(90.000000, 31.000000)"><mask fill="white"><use xlink:href="#path-8611"></use></mask><use fill-rule="evenodd" xlink:href="#path-8611" style="fill: rgb(25, 25, 25);"></use></g></g></g></svg>
+              </a>
+
+              <div class="nav-modal">
+                <div class="nav-modal__link">
+                  <svg fill="#000000" width="40px" height="40px" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook</title> <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path> </g></svg>
+                </div>
+
+                <div class="nav-modal__link">
+                  <svg width="30px" height="30px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g></svg>
+                </div>
+
+                <div class="nav-modal__link">
+                  <svg width="30px" height="30px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#168]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]"> </path> </g> </g> </g> </g></svg>
+                </div>
+                <div class="nav-modal__link">
+                  <svg fill="#000000" height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 273 256 256" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M-64.5,273h-157c-27.3,0-49.5,22.2-49.5,49.5v52.3v104.8c0,27.3,22.2,49.5,49.5,49.5h157c27.3,0,49.5-22.2,49.5-49.5V374.7 v-52.3C-15.1,295.2-37.3,273-64.5,273z M-50.3,302.5h5.7v5.6v37.8l-43.3,0.1l-0.1-43.4L-50.3,302.5z M-179.6,374.7 c8.2-11.3,21.5-18.8,36.5-18.8s28.3,7.4,36.5,18.8c5.4,7.4,8.5,16.5,8.5,26.3c0,24.8-20.2,45.1-45.1,45.1s-44.9-20.3-44.9-45.1 C-188.1,391.2-184.9,382.1-179.6,374.7z M-40,479.5C-40,493-51,504-64.5,504h-157c-13.5,0-24.5-11-24.5-24.5V374.7h38.2 c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18.2-5.2-26.3H-40V479.5z"></path> </g></svg>
+                </div>
+                <div class="nav-modal__link">
+                  <svg width="30px" height="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="Icons"> <g> <path d="M20.1,20.5a2.3,2.3,0,0,0-2.2,2.4,2.3,2.3,0,0,0,2.2,2.4,2.4,2.4,0,0,0,0-4.8Z"></path> <path d="M28,20.5a2.4,2.4,0,1,0,2.2,2.4A2.3,2.3,0,0,0,28,20.5Z"></path> <path d="M38.5,2H9.5A4.5,4.5,0,0,0,5,6.5V36.3a4.5,4.5,0,0,0,4.5,4.5H34.1l-1.2-4.1,2.8,2.7,2.6,2.4L43,46V6.5A4.5,4.5,0,0,0,38.5,2ZM30.2,30.7l-1.5-1.8a6.9,6.9,0,0,0,4-2.6,15.1,15.1,0,0,1-2.5,1.3,14.6,14.6,0,0,1-3.2,1,15,15,0,0,1-5.6,0,20.2,20.2,0,0,1-3.2-1l-1.6-.7h-.2c0-.1,0-.1-.1-.1l-.6-.4a6.9,6.9,0,0,0,3.8,2.6l-1.4,1.8a8,8,0,0,1-6.7-3.3,29,29,0,0,1,3.2-12.8,10.3,10.3,0,0,1,6.1-2.3l.2.2a15.4,15.4,0,0,0-5.7,2.9l1.3-.6a12.7,12.7,0,0,1,4.9-1.4h.4a20.6,20.6,0,0,1,4.3,0,16.3,16.3,0,0,1,6.6,2.1,13.5,13.5,0,0,0-5.4-2.8l.3-.3a10.3,10.3,0,0,1,6.1,2.3,29.7,29.7,0,0,1,3.1,12.8S35,30.6,30.2,30.7Z"></path> </g> </g> </g> </g></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal-menu__contenido">
+
+          </div> <!-- .Modal-menu__contenido -->
+
+        </div>
+      </div> <!-- .Modal-menu -->
+    </div> <!-- .Modal-mask -->
+
+    <script type="module" src="/src/js/modal-menu.js"></script>
+    <script type="module" src="/src/js/scroll-nav.js"></script>
+    <script type="module" src="/src/js/modal-trailer.js"></script>
+    <script type="module" src="/src/js/slider.js"></script>
+    <script type="module" src="/src/js/ediciones-doom.js"></script>
+  </body>
+</html>
