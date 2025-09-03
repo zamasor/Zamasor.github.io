@@ -1,0 +1,9 @@
+.flex-thang {
+  display: flex;
+}
+
+.flex-thang div {
+  background-color: #0c0c0c ;
+  padding: 10px;
+  margin: 20px;
+}
