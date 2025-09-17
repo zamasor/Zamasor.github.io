@@ -1,5 +1,6 @@
 .flex-thang {
   display: flex;
+  justify-content: center;
 }
 
 .flex-thang div {
